@@ -3,7 +3,7 @@
 # Clone this repository into a download location for the fullband audio files, then run it 
 
 # Grabs list of files with wavpack extensions in the directory we're in context of
-$originalVids = Get-ChildItem *.wav -Recurse
+$originalVids = Get-ChildItem input/*.wav #-Recurse
 
 foreach ($inputVid in $originalVids) {
     # Keep the filename, append 'converted' for easy differentiation
