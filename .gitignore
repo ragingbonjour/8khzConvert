@@ -1,0 +1,3 @@
+# Include the folders, but not the contents
+output/*
+input/test*
