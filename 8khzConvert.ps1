@@ -3,9 +3,9 @@
 # Clone this repository into a download location for the fullband audio files, then run it 
 
 # Grabs list of files with wavpack extensions in the directory we're in context of
-$originalVids = Get-ChildItem input/*.wav #-Recurse
+$originalClips = Get-ChildItem input/*.wav #-Recurse
 
-foreach ($inputVid in $originalVids) {
+foreach ($inputVid in $originalClips) {
     # Keep the filename, append 'converted' for easy differentiation
     # May be easiest to pre-name files before applying conversion script
     $outputClip = [io.path]::ChangeExtension($inputVid.FullName, 'converted.wav')
